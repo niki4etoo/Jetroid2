@@ -20,6 +20,12 @@ public class ClickToContinue : MonoBehaviour {
 			LoadScene ();
 		}
 
+		if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return) && !loadLock)
+        {
+			LoadScene ();
+        }
+
+
 	}
 
 	void LoadScene(){
